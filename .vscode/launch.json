@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Atividade01",
+            "request": "launch",
+            "mainClass": "Aula01.Atividade01",
+            "projectName": "AULAS JAVA_b0a6672b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exemplo03",
+            "request": "launch",
+            "mainClass": "Aula01.Exemplo03",
+            "projectName": "AULAS JAVA_b0a6672b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exemplo02",
+            "request": "launch",
+            "mainClass": "Aula01.Exemplo02",
+            "projectName": "AULAS JAVA_b0a6672b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exemplo01",
+            "request": "launch",
+            "mainClass": "Aula01.Exemplo01",
+            "projectName": "AULAS JAVA_b0a6672b"
+        }
+    ]
+}
