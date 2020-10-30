@@ -6,7 +6,7 @@ public class Data{
     int Ano;
 
     public Data(int Dia, int Mes, int Ano){
-        if(this.Dia <= 30 && this.Dia > 0 && this.Mes <= 12 && this.Mes > 0){
+        if(Dia <= 30 && Dia > 0 && Mes <= 12 && Mes > 0){
             this.Dia = Dia;
             this.Mes = Mes;
             this.Ano = Ano;

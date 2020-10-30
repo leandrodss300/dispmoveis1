@@ -14,8 +14,8 @@ package Prova01.classes;
         }
      }
 
-     public Voo(String numVoo, int dia,int mes,int ano){
-        this.data = new Data(dia,mes,ano); 
+     public Voo(String numVoo, int Dia,int Mes,int Ano){
+        this.data = new Data(Dia,Mes,Ano); 
         this.numVoo = numVoo;
         this.vagas = new int [100];
 
@@ -33,22 +33,19 @@ package Prova01.classes;
          return -1;
      }
 
-    public void verifica(int a){
-        if(this.vagas[a-1] == 1){
-            System.out.println("Esta vaga já está preenchida!");
-        }else if(this.vagas[a-1] == 0){
-            System.out.println("Esta vaga está disponível!");
-        }
-    }
-
-    public boolean ocupa(int b){
+    public boolean verifica(int b){
         if(this.vagas[b-1] == 1){
             return false;
         }
         return true;
     }
 
-    public int vagas(int a){
+    public void ocupa(int b){
+        this.vagas[b] = 1;
+    }
+
+    public int vagas(){
+        int a = 0;
         for(int i=0; i < vagas.length; i++){
             if(this.vagas[i] == 0){
                 a++;
@@ -67,7 +64,8 @@ package Prova01.classes;
 
     @Override
     public String toString(){
-        return"Número do Vôo: "+this.getNumVoo()+"\n"+
+        return"Quantidade de cadeiras livres: "+this.vagas()+"\n"+
+              "Número do Vôo: "+this.getNumVoo()+"\n"+
               "Data: "+this.getData();
     }
  }
